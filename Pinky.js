@@ -1,6 +1,3 @@
-/* codded by afnanplk
-*/
-
 const { Sequelize } = require('sequelize');
 const fs = require('fs');
 if (fs.existsSync('config.env')) require('dotenv').config({ path: './config.env' });
@@ -12,6 +9,6 @@ function convertToBool(text, fault = 'true') {
 
 module.exports = {
  PLKAFN: process.env.BAD_WORDS === undefined ? false : process.env.BAD_WORDS,
- PHONE: process.env.NUMBER === undefined ? '+919895828468' : process.env.NUMBER,   
- OA_NAME: process.env.DEPLOYER === undefined ? 'Amalser' : process.env.DEPLOYER,    
+ PHONE: process.env.NUMBER === undefined ? '+94779529221' : process.env.NUMBER,   
+ OA_NAME: process.env.DEPLOYER === undefined ? 'Virus Fucker' : process.env.DEPLOYER,    
 };
