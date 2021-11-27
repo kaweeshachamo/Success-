@@ -1,11 +1,11 @@
-/* 
-Heroku plugin for WhatsAsena - W4RR10R
-Licensed under the  GPL-3.0 License;
-you may not use this file except in compliance with the License.
-WhatsAsena - Yusuf Usta
+/* # Exclusively from VIRUS FUCKER Project 
+# Do not use this fore any commercial thing
+# Do not edit (Respect to the Devaoloper) 
+# All rights reserved VIRUS FUCKER
+# Credit : usufusta-whatsappStefanie
 */
 
-const Asena = require('../events');
+const Stefanie = require('../events');
 const Config = require('../config');
 const Heroku = require('heroku-client');
 const {secondsToHms} = require('./afk');
@@ -24,7 +24,7 @@ const heroku = new Heroku({
 
 let baseURI = '/apps/' + Config.HEROKU.APP_NAME;
 
-Asena.addCommand({pattern: 'degis ?(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.DEGİS_DESC}, (async (message, match) => {
+Stefanie.addCommand({pattern: 'degis ?(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.DEGİS_DESC}, (async (message, match) => {
 
     if (match[1] == '') {
         return await message.client.sendMessage(message.jid, Lang.DEGİS_NONE, MessageType.text); 
@@ -142,6 +142,106 @@ Asena.addCommand({pattern: 'degis ?(.*)', fromMe: true, dontAddCommandList: true
             } 
         });
     }
+    else if (match[1] == 'cemoji' && message.reply_message) {
+        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
+        await new Promise(r => setTimeout(r, 1200));
+        await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
+        await heroku.patch(baseURI + '/config-vars', { 
+            body: { 
+                ['EMOJI_COMMAND']: message.reply_message.text
+            } 
+        });
+    }
+    else if (match[1] == 'demoji' && message.reply_message) {
+        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
+        await new Promise(r => setTimeout(r, 1200));
+        await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
+        await heroku.patch(baseURI + '/config-vars', { 
+            body: { 
+                ['EMOJI_DESCRIPTION']: message.reply_message.text
+            } 
+        });
+    }
+    else if (match[1] == 'eemoji' && message.reply_message) {
+        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
+        await new Promise(r => setTimeout(r, 1200));
+        await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
+        await heroku.patch(baseURI + '/config-vars', { 
+            body: { 
+                ['EMOJI_EXAMPLE']: message.reply_message.text
+            } 
+        });
+    }
+    else if (match[1] == 'wemoji' && message.reply_message) {
+        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
+        await new Promise(r => setTimeout(r, 1200));
+        await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
+        await heroku.patch(baseURI + '/config-vars', { 
+            body: { 
+                ['EMOJI_WARNING']: message.reply_message.text
+            } 
+        });
+    }
+    else if (match[1] == 'bio' && message.reply_message) {
+        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
+        await new Promise(r => setTimeout(r, 1200));
+        await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
+        await heroku.patch(baseURI + '/config-vars', { 
+            body: { 
+                ['BIO']: message.reply_message.text
+            } 
+        });
+    }
+    else if (match[1] == 'sudo' && message.reply_message) {
+        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
+        await new Promise(r => setTimeout(r, 1200));
+        await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
+        await heroku.patch(baseURI + '/config-vars', { 
+            body: { 
+                ['SUDO']: message.reply_message.text
+            } 
+        });
+    }
+    else if (match[1] == 'minfo' && message.reply_message) {
+        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
+        await new Promise(r => setTimeout(r, 1200));
+        await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
+        await heroku.patch(baseURI + '/config-vars', { 
+            body: { 
+                ['MENU_INFO']: message.reply_message.text
+            } 
+        });
+    }
+   else if (match[1] == 'name' && message.reply_message) {
+        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
+        await new Promise(r => setTimeout(r, 1200));
+        await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
+        await heroku.patch(baseURI + '/config-vars', { 
+            body: { 
+                ['BOT_NAME']: message.reply_message.text
+            } 
+        });
+    }
+    else if (match[1] == 'captions' && message.reply_message) {
+        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
+        await new Promise(r => setTimeout(r, 1200));
+        await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
+        await heroku.patch(baseURI + '/config-vars', { 
+            body: { 
+                ['CAPTION']: message.reply_message.text
+            } 
+        });
+    }
+     else if (match[1] == 'menulogo' && message.reply_message) {
+        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
+        await new Promise(r => setTimeout(r, 1200));
+        await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
+        await heroku.patch(baseURI + '/config-vars', { 
+            body: { 
+                ['MENU_LOGO']: message.reply_message.text
+            } 
+        });
+    }
     else if (match[1] == 'unblock' && message.reply_message) {
         await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
         await new Promise(r => setTimeout(r, 1200));
@@ -158,7 +258,7 @@ Asena.addCommand({pattern: 'degis ?(.*)', fromMe: true, dontAddCommandList: true
 }));
 
 
-Asena.addCommand({pattern: 'restart$', fromMe: true, dontAddCommandList: true, desc: Lang.RESTART_DESC}, (async (message, match) => {
+Stefanie.addCommand({pattern: 'restart$', fromMe: true, dontAddCommandList: true, desc: Lang.RESTART_DESC}, (async (message, match) => {
 
     await message.client.sendMessage(message.jid,Lang.RESTART_MSG, MessageType.text);
     console.log(baseURI);
@@ -167,7 +267,7 @@ Asena.addCommand({pattern: 'restart$', fromMe: true, dontAddCommandList: true, d
     });
 }));
 
-Asena.addCommand({pattern: 'shutdown$', fromMe: true, dontAddCommandList: true, desc: Lang.SHUTDOWN_DESC}, (async(message, match) => {
+Stefanie.addCommand({pattern: 'shutdown$', fromMe: true, dontAddCommandList: true, desc: Lang.SHUTDOWN_DESC}, (async(message, match) => {
 
     await heroku.get(baseURI + '/formation').then(async (formation) => {
         forID = formation[0].id;
@@ -185,7 +285,7 @@ Asena.addCommand({pattern: 'shutdown$', fromMe: true, dontAddCommandList: true, 
 
 if (Config.WORKTYPE == 'private') {
 
-    Asena.addCommand({pattern: 'dyno$', fromMe: true, dontAddCommandList: true, desc: Lang.DYNO_DESC}, (async (message, match) => {
+    Stefanie.addCommand({pattern: 'dyno$', fromMe: true, dontAddCommandList: true, desc: Lang.DYNO_DESC}, (async (message, match) => {
 
         heroku.get('/account').then(async (account) => {
             // have encountered some issues while calling this API via heroku-client
@@ -218,7 +318,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Asena.addCommand({pattern: 'dyno$', fromMe: false, dontAddCommandList: true, desc: Lang.DYNO_DESC}, (async (message, match) => {
+    Stefanie.addCommand({pattern: 'dyno$', fromMe: false, dontAddCommandList: true, desc: Lang.DYNO_DESC}, (async (message, match) => {
 
         heroku.get('/account').then(async (account) => {
             // have encountered some issues while calling this API via heroku-client
@@ -250,7 +350,7 @@ else if (Config.WORKTYPE == 'public') {
     }));
 }
 
-Asena.addCommand({pattern: 'setvar ?(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.SETVAR_DESC}, (async(message, match) => {
+Stefanie.addCommand({pattern: 'setvar ?(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.SETVAR_DESC}, (async(message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.KEY_VAL_MISSING, MessageType.text);
 
@@ -666,7 +766,7 @@ Asena.addCommand({pattern: 'setvar ?(.*)', fromMe: true, dontAddCommandList: tru
 }));
 
 
-Asena.addCommand({pattern: 'delvar ?(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.DELVAR_DESC}, (async (message, match) => {
+Stefanie.addCommand({pattern: 'delvar ?(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.DELVAR_DESC}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.KEY_VAL_MISSING, MessageType.text);
     await heroku.get(baseURI + '/config-vars').then(async (vars) => {
@@ -688,7 +788,7 @@ Asena.addCommand({pattern: 'delvar ?(.*)', fromMe: true, dontAddCommandList: tru
 
 }));
 
-Asena.addCommand({pattern: 'getvar ?(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.GETVAR_DESC}, (async (message, match) => {
+Stefanie.addCommand({pattern: 'getvar ?(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.GETVAR_DESC}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.KEY_VAL_MISSING, MessageType.text);
     await heroku.get(baseURI + '/config-vars').then(async (vars) => {
