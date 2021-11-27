@@ -1,7 +1,7 @@
 {
     "name": "COBRA-BOT",
     "description": "https://github.com/Kaweeshachamodk/cobra-bot",
-    "logo": "https://i.imgur.com/yCYYyEJ.jpeg",
+    "logo": "https://telegra.ph/file/0edc0f3917fde20a7990a.jpg",
     "keywords": ["whatsapp", "userbot", "julie", "WhatsAsena", "mwol", "bot", "ai"],
     "repository": "https://github.com/Kaweeshachamodk/cobra-bot",
     "website":   "https://github.com/Kaweeshachamodk/cobra-bot",
@@ -38,12 +38,12 @@
         "LG_LOGO": {
             "description": "LOGO list message image link(https://telegra.ph/)link.",
             "required": true,
-            "value": "https://telegra.ph/file/1986d89402b68b4f4aeca.jpg"
+            "value": "https://telegra.ph/file/0edc0f3917fde20a7990a.jpg"
         },
         "LOGO_NAME": {
             "description": "Set the logo list name",
             "required": true,
-            "value": "Amalser"
+            "value": "stefanie"
         },
         "AMAL_SER": {
             "description": "Set the alive message two name",
@@ -191,7 +191,7 @@
         "BOT_NAME": {
             "description": "heading for .list command reply",
             "required": false,
-            "value": "•━━━━╼⤏Amalser⤎╾━━━•"
+            "value": "Stefanie"
         },
         "WORK_TYPE": {
             "description": "Amalser Working Type. If you use “public”, everyone can use the bot. Else if you use “private”, only you can use your bot.",
@@ -210,17 +210,17 @@
         "OWNER_NAME": {
             "description": "reply for .owner ! give your details, Use => default, to change back.",
             "required": false,
-            "value": "Amalser"
+            "value": "Virus Fucker"
         },
         "OWNER_NUMBER": {
             "description": "Enter the owner number, You must enter your number, Please don't enter the number with country code ( example : 91 for indian ) Also don't enter space & + on the number ( example : 91996132xxxx for indian ). ( This number will be shown on some commands )",
             "required": false,
-            "value": "919895828468"
+            "value": "94779529221"
         },
         "NUMBER": {
             "description": "Enter the owner number, You must enter your number, Please don't enter the number with country code ( example : 91 for indian ) Also don't enter space & + on the number ( example : 91996132xxxx for indian ). ( This number will be shown on some commands )",
             "required": false,
-            "value": "919895828468"
+            "value": "94779529221"
         },
         "DEPLOYER": {
             "description": "enter your name here",
