@@ -1,29 +1,29 @@
 {
-  "name": "JulieMwol",
+  "name": "npm-",
   "version": "7.3.6",
-  "description": "Julie Mwol is the Modified Version of WhatsAsena, Made By @farhan-dqz with Baileys.",
-  "main": "./cobra-bot/index.js",
+  "description": "Made By @kaweeshachamodk with Baileys.",
+  "main": "./npm-/index.js",
   "scripts": {
     "start": "supervisor -s index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Kaweeshachamodk/cobra-bot.git"
+    "url": "git+https://github.com/Kaweeshachamodk/npm-.git"
   },
   "keywords": [
     "whatsapp",
     "bot",
     "ai",
-    "asena",
-    "WhatsAsena"
+    "npm-",
+    "stefanie"
   ],
-  "author": "farhan-dqz",
-  "developer": "@TOXIC-DEVIL / @farhan-dqz",
+  "author": "kaweeshachamodk",
+  "developer": "@Kaweesha / @Chamod",
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/Kaweeshachamodk/cobra-bot/issues"
+    "url": "https://github.com/Kaweeshachamodk/npm-/issues"
   },
-  "homepage": "https://github.com/Kaweeshachamodk/cobra-bot#readme",
+  "homepage": "https://github.com/Kaweeshachamodk/npm-#readme",
   "dependencies": {
     "@adiwajshing/baileys": "3.5.3",
     "@lh2020/speedtest-net": "^2.1.1",
