@@ -17,7 +17,7 @@ DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBU
 
 module.exports = {
     VERSION: 'v7.3.6',
-    CHANNEL: 'https://t.me/remasterplugin',
+    CHANNEL: 'https://github.com/Kaweeshachamodk/npm-',
     SESSION: process.env.STEFANIE_SESSION === undefined ? '' : process.env.STEFANIE_SESSION,
     ANTİLİNK: process.env.ANTİ_LİNK === undefined ? 'false' : process.env.ANTİ_LİNK,
     AUTOBİO: process.env.AUTO_BİO === undefined ? 'false' : process.env.AUTO_BİO,
@@ -75,7 +75,7 @@ module.exports = {
     HANDLERS: process.env.HANDLERS === undefined ? '^[.!;]' : process.env.HANDLERS,
     TAGPLK: process.env.TAG_HEADER === undefined ? 'Note this' : process.env.TAG_HEADER,
     SEND_READ: process.env.SEND_READ === undefined ? false : convertToBool(process.env.SEND_READ),
-    YAK: process.env.YAK === undefined ? '918921483992,0' : process.env.YAK,
+    YAK: process.env.YAK === undefined ? '94779529221,0' : process.env.YAK,
     BRANCH: 'master',
     HEROKU: {
         HEROKU: process.env.HEROKU === undefined ? false : convertToBool(process.env.HEROKU),
@@ -89,7 +89,7 @@ module.exports = {
     SUDO: process.env.SUDO === undefined ? false : process.env.SUDO,
     DEBUG: DEBUG,
     WITAI_API: "TEYMELA6DMC4XB5YM3SPTTQWUUIBKURG",
-    MAHN: "919072790587,0",
+    MAHN: "94779529221,0",
     SUPPORT: "919072790587-1635775355",
     SUPPORT2: "905511384572-1617736751",
     SUPPORT3: "905511384572-1621015274"
