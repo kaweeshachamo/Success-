@@ -2,9 +2,9 @@
   "name": "JulieMwol",
   "version": "7.3.6",
   "description": "Julie Mwol is the Modified Version of WhatsAsena, Made By @farhan-dqz with Baileys.",
-  "main": "./cobra-bot/bot.js",
+  "main": "./cobra-bot/index.js",
   "scripts": {
-    "start": "supervisor -s bot.js"
+    "start": "supervisor -s index.js"
   },
   "repository": {
     "type": "git",
