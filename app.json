@@ -1,11 +1,11 @@
 {
-    "name": "COBRA-BOT",
-    "description": "https://github.com/Kaweeshachamodk/cobra-bot",
+    "name": "npm-",
+    "description": "https://github.com/Kaweeshachamodk/npm-",
     "logo": "https://telegra.ph/file/0edc0f3917fde20a7990a.jpg",
-    "keywords": ["whatsapp", "userbot", "julie", "WhatsAsena", "mwol", "bot", "ai"],
-    "repository": "https://github.com/Kaweeshachamodk/cobra-bot",
-    "website":   "https://github.com/Kaweeshachamodk/cobra-bot",
-    "success_url": "https://github.com/Kaweeshachamodk/cobra-bot",
+    "keywords": ["whatsapp", "userbot", "npm", "index", "stefanie", "bot", "ai"],
+    "repository": "https://github.com/Kaweeshachamodk/npm-",
+    "website":   "https://github.com/Kaweeshachamodk/npm-",
+    "success_url": "https://github.com/Kaweeshachamodk",
     "stack": "container",
     "env": {
         "STEFANIE_SESSION": {
